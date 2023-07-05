@@ -179,10 +179,266 @@ main .product-section .furniture .card-section_section2 {
   gap: 17rem;
   width: 100%;
 }
+main .info-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .info-section .about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+main .info-section .about-us .whyus {
+  float: left;
+  width: 100%;
+}
+main .info-section .about-us .whyus h2 {
+  color: #7C6A0A;
+  font-size: 4rem;
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  line-height: 65px;
+  padding-top: 5rem;
+  padding-left: 3rem;
+  padding-bottom: 4rem;
+}
+main .info-section .about-us .images-container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+main .info-section .about-us .images-container .earth {
+  display: flex;
+  width: 50%;
+  color: #E86424;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+main .info-section .about-us .images-container .earth img {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  padding-right: 1rem;
+}
+main .info-section .about-us .images-container .innovation {
+  display: flex;
+  width: 50%;
+  color: #E86424;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+main .info-section .about-us .images-container .innovation img {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  padding-right: 1rem;
+}
+main .gallery {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+main .gallery .gallery-title {
+  float: left;
+  width: 100%;
+}
+main .gallery .gallery-title h2 {
+  color: #7C6A0A;
+  font-size: 4rem;
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  line-height: 65px;
+  padding-top: 5rem;
+  padding-left: 3rem;
+  margin-bottom: 7rem;
+}
+main .gallery .gallery-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .gallery .gallery-images .div img {
+  width: 30rem;
+  height: 47rem;
+  border-radius: 2rem;
+}
+main .findus {
+  width: 85%;
+}
+main .findus h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  padding-top: 5rem;
+  margin-top: 9rem;
+  margin-bottom: 7rem;
+}
+main .findus img {
+  width: 100%;
+  border-radius: 2rem;
+  width: 120rem;
+}
+main .findus p {
+  font-size: 3rem;
+  color: #E86424;
+  line-height: 4rem;
+  padding-top: 2rem;
+}
+main .findus .p2 {
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
 
 footer {
   background-color: #FA9500;
   width: 92rem;
   width: 100%;
-  height: 25rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-titles {
+  height: 80%;
+  color: white;
+  padding: 5rem;
+  font-size: 2rem;
+}
+footer .social-media {
+  float: inline-end;
+  display: flex;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 600px) {
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  .impact-section {
+    height: auto;
+    display: block;
+    background-color: rgba(141, 189, 175, 0.7176470588);
+    border-radius: 2rem;
+    font-size: 2rem;
+    margin-bottom: 6rem;
+  }
+  .impact-section h1 {
+    font-size: 2rem;
+    color: black;
+  }
+  .impact-section .image-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    bottom: 10rem;
+  }
+  .product-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .product-section .healthcare {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5 rem;
+  }
+  .about-us {
+    display: flex;
+  }
+  .about-us .whyus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-us .images-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    float: left;
+  }
+  .about-us .images-container .earth {
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us .images-container .innovation {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery {
+    display: flex;
+    width: 100%;
+  }
+  .gallery .gallery-images {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .findus .map img {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  article .impact-section {
+    width: 90%;
+  }
+  article .product-image img {
+    width: 15rem;
+  }
+  .gallery {
+    display: flex;
+    width: 100%;
+  }
+  .gallery .gallery-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery .gallery-images img {
+    width: 100%;
+  }
+  .gallery .gallery-images .div {
+    width: auto;
+  }
+  .gallery .gallery-images .div img {
+    width: 20rem;
+    height: 2rem;
+  }
+  .findus {
+    width: 100%;
+  }
+  .findus .map {
+    width: 100%;
+  }
+  .findus .map img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

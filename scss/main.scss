@@ -202,6 +202,132 @@ main{
 
 
     }
+    .info-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .about-us{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+
+            .whyus{
+                float: left;
+                width: 100%;
+                h2{
+                    color: #7C6A0A;
+                    font-size: 4rem;
+                    font-family: IBM Plex Sans;
+                    font-weight: 500;
+                    line-height: 65px;
+                    padding-top: 5rem;
+                    padding-left: 3rem;
+                    padding-bottom: 4rem;
+                }
+            }
+           
+            .images-container{
+                // background-color: #FA9500;
+                display: flex;
+                width: 80%;
+                justify-content: center;
+                align-items: center;
+                .earth{
+                    display: flex;
+                    width: 50%;
+                    color: #E86424;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    line-height: 3rem;
+                    img{
+                        width: 10rem;
+                        height: 10rem;
+                        margin: 1rem;
+                        padding-right: 1rem;
+                    }
+                }
+                .innovation{
+                    display: flex;
+                    width: 50%;
+                    color: #E86424;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    line-height: 3rem;
+                    img{
+                        width: 10rem;
+                        height: 10rem;
+                        margin: 1rem;
+                        padding-right: 1rem;
+                        
+                    }
+    
+                }
+            }
+           
+        }
+    }
+    .gallery{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        .gallery-title{
+            float: left;
+            width: 100%;
+            h2{
+                color: #7C6A0A;
+                font-size: 4rem;
+                font-family: IBM Plex Sans;
+                font-weight: 500;
+                line-height: 65px;
+                padding-top: 5rem;
+                padding-left: 3rem;
+                margin-bottom: 7rem;
+            }
+
+        }
+        .gallery-images{
+            width: 100%;
+            display:flex;
+            justify-content: space-between;
+            .div{
+                img{
+                    width: 30rem;
+                    height: 47rem;
+                    border-radius: 2rem;
+                }
+            }
+        }
+       
+    }
+    .findus{
+        width: 85%;
+        h2{
+            font-size: 4rem;
+            font-weight: 500;
+            padding-top: 5rem;
+            margin-top: 9rem;
+            margin-bottom: 7rem;
+            
+        }
+        img{
+            width: 100%;
+            border-radius: 2rem;
+            width: 120rem;
+        }
+        p{
+           font-size: 3rem;
+           color: #E86424 ; 
+           line-height: 4rem;
+           padding-top: 2rem;
+        }
+        .p2{
+            font-size: 2rem;
+            margin-bottom: 6rem;
+        }
+    }
     
 }
     
@@ -209,5 +335,157 @@ footer{
     background-color: #FA9500;
     width: 92rem;
     width: 100%;
-    height: 25rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    .footer-titles{
+        height: 80%;
+        color: white;
+        padding: 5rem;
+        font-size: 2rem;
+    }
+    .social-media{
+        float: inline-end;
+        display: flex;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width:600px){
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    .impact-section{
+        height: auto;
+        display: block;
+        background-color: #8dbdafb7;
+        border-radius: 2rem;
+        font-size: 2rem;
+        margin-bottom: 6rem;
+        h1{
+            font-size: 2rem;
+            color: black;
+        }
+        .image-section{
+            width: 100%;
+            height: auto;
+            display: flex;
+            position: relative;
+            bottom: 10rem;
+        }
+    }
+    .product-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .healthcare{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5 rem   ;
+        }
+    }
+    .about-us{
+        display: flex;
+        .whyus{
+            display: flex;
+            flex-direction: column;
+            // background-color: #BABD8D;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .images-container{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            // background-color: #7C6A0A;
+            float: left;
+            .earth{
+                width: 32rem;
+                display: flex;
+                flex-direction: column;
+            }
+            .innovation{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .gallery{
+        display: flex;
+        width: 100%;
+        .gallery-images{
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .findus{
+        .map{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+    }
+}
+@media (max-width:1024px){
+    article{
+        display: flex;
+        flex-direction: column;
+        .impact-section{
+            width: 90%;
+        }
+        .product-image{
+            img{
+                width: 15rem;
+            }
+        }
+    }
+    .gallery{
+        display: flex;
+        width: 100%;
+        .gallery-images{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+            .div{
+                width: auto;
+                img{
+                    width: 20rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+    .findus{
+        width: 100%;
+        .map{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
 }
